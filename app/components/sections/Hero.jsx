@@ -26,10 +26,7 @@ const Hero = ({ section }) => {
           muted
           className="block absolute w-full h-full object-cover"
         >
-          <source
-            type="video/mp4"
-            src={require("@/public/Hoppy Festival 2023.mp4")}
-          />
+          <source type="video/mp4" src="/Hoppy Festival 2023.mp4" />
         </video>
       </div>
       {/* <NextVideo src={HoppyFestivalVideo} autoplay="on" /> */}
