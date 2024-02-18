@@ -20,7 +20,7 @@ const Header = async () => {
         <nav>
           <ul className="flex gap-4">
             {menu.map((item) => (
-              <li key={menu.id}>
+              <li key={item.id}>
                 <Link href={item.url} className="p-4 block text-sm font-medium">
                   {item.label}
                 </Link>

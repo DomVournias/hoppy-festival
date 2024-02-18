@@ -1,9 +1,8 @@
-import HoppyFestivalVideo from "@/videos/Hoppy Festival 2023.mp4";
+import HoppyFestivalVideo from "@/public/Hoppy Festival 2023.mp4";
 import NextVideo from "next-video";
 import React from "react";
 
 const Hero = ({ section }) => {
-  const videoUrl = "https://www.youtube.com/watch?v=nqnh4uACNpg&t=82s";
   return (
     <section className="mt-[-80px] h-screen">
       <div className="relative w-full h-full flex items-center justify-center z-[-1]">
@@ -27,7 +26,10 @@ const Hero = ({ section }) => {
           muted
           className="block absolute w-full h-full object-cover"
         >
-          <source type="video/mp4" src="/_next-video/Hoppy Festival 2023.mp4" />
+          <source
+            type="video/mp4"
+            src={require("@/public/Hoppy Festival 2023.mp4")}
+          />
         </video>
       </div>
       {/* <NextVideo src={HoppyFestivalVideo} autoplay="on" /> */}
