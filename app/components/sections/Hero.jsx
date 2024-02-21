@@ -26,7 +26,7 @@ const Hero = ({ section }) => {
           muted
           className="block absolute w-full h-full object-cover"
         >
-          <source type="video/mp4" src="/Hoppy Festival 2023.mp4" />
+          <source type="video/mp4" src="/Hoppy Festival 2023.m4v" />
         </video>
       </div>
       {/* <NextVideo src={HoppyFestivalVideo} autoplay="on" /> */}
