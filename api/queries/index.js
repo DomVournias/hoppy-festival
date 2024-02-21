@@ -11,6 +11,15 @@ export const HOME_SECTIONS_QUERY = `
             heading
             description
           }
+          festival {
+            description
+            time_heading
+            time_description
+            place_heading
+            place_description
+            goal_heading
+            goal_description
+          }
           upcoming {
             eventDate
             heading
@@ -22,6 +31,36 @@ export const HOME_SECTIONS_QUERY = `
             faq {
               question
               answer
+            }
+          }
+          actions {
+            gallery {
+              nodes {
+                id
+                title
+                sourceUrl
+              }
+            }
+          }
+          sponsors {
+            description
+            sponsors {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
+            supporters {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
+            top_sponsor {
+              node {
+                title
+                sourceUrl
+              }
             }
           }
         }
