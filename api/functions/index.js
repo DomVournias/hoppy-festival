@@ -25,6 +25,11 @@ export async function fetchHomeSections() {
   return data;
 }
 
+export async function fetchHomeHeroSection() {
+  const data = await fetchDataNoCache(HOME_SECTIONS_QUERY);
+  return data;
+}
+
 export async function fetchMainMenu() {
   const data = await fetchDataNoCache(MAIN_MENU_QUERY);
   return data;

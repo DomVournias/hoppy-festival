@@ -24,7 +24,7 @@ const Festival = ({ section }) => {
         <div className="flex gap-20">
           <div className="w-1/2 space-y-6 z-10">
             <h3 className="text-4xl font-bold pb-2">Το Φεστιβάλ</h3>
-            <p
+            <div
               dangerouslySetInnerHTML={{
                 __html: section.content,
               }}

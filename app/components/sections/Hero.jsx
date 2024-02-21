@@ -13,7 +13,7 @@ const Hero = ({ section }) => {
             }}
             className="text-6xl font-extrabold pb-4 "
           />
-          <p
+          <div
             dangerouslySetInnerHTML={{
               __html: section.hero.description,
             }}
