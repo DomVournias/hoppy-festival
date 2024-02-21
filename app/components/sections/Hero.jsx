@@ -1,4 +1,3 @@
-import HoppyFestivalVideo from "@/public/Hoppy Festival 2023.mp4";
 import NextVideo from "next-video";
 import React from "react";
 
