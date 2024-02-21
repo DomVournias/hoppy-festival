@@ -16,6 +16,14 @@ export const HOME_SECTIONS_QUERY = `
             heading
             description
           }
+          info {
+            heading
+            description
+            faq {
+              question
+              answer
+            }
+          }
         }
       }
     }

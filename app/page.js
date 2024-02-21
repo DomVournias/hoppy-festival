@@ -17,6 +17,7 @@ export default async function Home() {
 
     return section;
   };
+
   return (
     <div>
       <Hero section={getSectionBySlug("hero")} />
@@ -24,7 +25,7 @@ export default async function Home() {
       <Festival section={getSectionBySlug("festival")} />
       <Actions />
       <Sponsors />
-      <Info />
+      <Info section={getSectionBySlug("info")} />
       <Testimonials />
     </div>
   );
