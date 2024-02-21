@@ -1,12 +1,13 @@
 import Carousel from "../carousel/Carousel";
 import React from "react";
 
-const Actions = () => {
+const Actions = ({ section }) => {
+  // console.log(section);
   return (
-    <div>
+    <section>
       <h2>Actions</h2>
-      <Carousel />
-    </div>
+      <Carousel items={section.gallery.nodes} />
+    </section>
   );
 };
 
