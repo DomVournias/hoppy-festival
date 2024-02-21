@@ -1,5 +1,4 @@
 import Accordion from "../accordion/Accordion";
-import Faq from "../faq/Faq";
 import React from "react";
 
 const Info = ({ section }) => {
@@ -8,17 +7,17 @@ const Info = ({ section }) => {
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            {section.info.heading}
+          <h2 className="text-4xl font-bold pb-2  text-black ">
+            {section.heading}
           </h2>
           <div
             className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600"
-            dangerouslySetInnerHTML={{ __html: section.info.description }}
+            dangerouslySetInnerHTML={{ __html: section.description }}
           />
         </div>
 
         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-          <Accordion items={section.info.faq} />
+          <Accordion items={section.faq} />
         </div>
         <p className="text-center text-gray-600 textbase mt-9">
           Έχετε περισσότερες ερωτήσεις?{" "}
