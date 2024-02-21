@@ -14,7 +14,13 @@ const Header = async () => {
     <header>
       <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-20 text-white">
         <Link href="/" className="text-lg font-bold flex items-center gap-3">
-          <Image src={logo} width={50} height={50} className="rounded-full" />
+          <Image
+            alt="header logo"
+            src={logo}
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
           <span>Hoppy Festival 2024</span>
         </Link>
         <nav>

@@ -8,10 +8,16 @@ const Footer = () => {
     <footer className="footer footer-center pt-10 pl-10 pr-10 bg-primary text-primary-content">
       <aside>
         <Link href="/" className="text-lg font-bold flex items-center gap-3">
-          <Image src={logo} width={80} height={80} className="rounded-full" />
+          <Image
+            alt="footer logo"
+            src={logo}
+            width={80}
+            height={80}
+            className="rounded-full"
+          />
         </Link>
         <p className="font-bold">
-          Kids Fun Festival. <br />
+          Hoppy Festival. <br />
           {/* Providing reliable tech since 1992 */}
         </p>
         <p>Copyright © 2024 - All right reserved</p>
