@@ -1,3 +1,4 @@
+import Accordion from "../accordion/Accordion";
 import Faq from "../faq/Faq";
 import React from "react";
 
@@ -16,8 +17,9 @@ const Info = ({ section }) => {
           />
         </div>
 
-        <Faq faq={section.info.faq} />
-
+        <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+          <Accordion items={section.info.faq} />
+        </div>
         <p className="text-center text-gray-600 textbase mt-9">
           Έχετε περισσότερες ερωτήσεις?{" "}
           <a
