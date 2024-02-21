@@ -15,7 +15,7 @@ export default async function Home() {
   const getSectionBySlug = (slug) => {
     const section = sections.find((item) => item.slug === slug);
 
-    return section;
+    return section[slug];
   };
 
   return (
@@ -23,8 +23,8 @@ export default async function Home() {
       <Hero section={getSectionBySlug("hero")} />
       <Upcoming section={getSectionBySlug("upcoming")} />
       <Festival section={getSectionBySlug("festival")} />
-      <Actions />
-      <Sponsors />
+      <Actions section={getSectionBySlug("actions")} />
+      <Sponsors section={getSectionBySlug("sponsors")} />
       <Info section={getSectionBySlug("info")} />
       <Testimonials />
     </div>
