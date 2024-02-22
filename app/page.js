@@ -1,3 +1,4 @@
+import About from "./components/sections/About";
 import Actions from "./components/sections/Actions";
 import Festival from "./components/sections/Festival";
 import Hero from "./components/sections/Hero";
@@ -27,6 +28,7 @@ export default async function Home() {
       <Sponsors section={getSectionBySlug("sponsors")} />
       <Info section={getSectionBySlug("info")} />
       <Testimonials />
+      <About section={getSectionBySlug("about")} />
     </div>
   );
 }

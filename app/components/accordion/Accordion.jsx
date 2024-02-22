@@ -7,11 +7,11 @@ const Accordion = ({ items }) => {
         <li key={index}>
           <div className="collapse collapse-arrow bg-white shadow-lg">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">
+            <div className="collapse-title text-xl font-medium text-accent-content">
               {item.question}
             </div>
             <div
-              className="collapse-content space-y-4"
+              className="collapse-content space-y-4 text-accent-content"
               dangerouslySetInnerHTML={{ __html: item.answer }}
             />
           </div>

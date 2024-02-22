@@ -34,6 +34,7 @@ export const HOME_SECTIONS_QUERY = `
             }
           }
           actions {
+            description
             gallery {
               nodes {
                 id
@@ -57,6 +58,15 @@ export const HOME_SECTIONS_QUERY = `
               }
             }
             top_sponsor {
+              node {
+                title
+                sourceUrl
+              }
+            }
+          }
+          about {
+            description
+            image {
               node {
                 title
                 sourceUrl

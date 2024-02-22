@@ -11,15 +11,16 @@ const Footer = () => {
           <Image
             alt="footer logo"
             src={logo}
-            width={80}
-            height={80}
+            width={70}
+            height={70}
             className="rounded-full"
           />
         </Link>
         <p className="font-bold">
-          Hoppy Festival. <br />
-          {/* Providing reliable tech since 1992 */}
+          EVENTITY EE. <br />
+          Εταιρεία Επικοινωνίας & Διοργάνωσης Εκδηλώσεων
         </p>
+
         <p>Copyright © 2024 - All right reserved</p>
       </aside>
       <nav>

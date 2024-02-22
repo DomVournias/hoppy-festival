@@ -11,8 +11,8 @@ const Header = async () => {
   const menu = res.data.menu.menuItems.nodes;
 
   return (
-    <header>
-      <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-20 text-white">
+    <header className="absolute z-50 w-full">
+      <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-50 text-white">
         <Link href="/" className="text-lg font-bold flex items-center gap-3">
           <Image
             alt="header logo"

@@ -3,12 +3,12 @@ import React from "react";
 
 const Carousel = ({ items }) => {
   return (
-    <div className="carousel w-full relative h-screen">
+    <div className="flex carousel w-1/2 relative h-screen">
       {items.map((item, index) => (
         <div
           key={index}
           id={`image-${index}`}
-          className="carousel-item relative w-full"
+          className="carousel-item relative w-full h-screen"
         >
           <Image
             alt={item.title}

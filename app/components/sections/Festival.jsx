@@ -11,7 +11,7 @@ import mask from "@/images/mask.png";
 
 const Festival = ({ section }) => {
   return (
-    <section className="relative">
+    <section id="festival" className="relative">
       <Image
         alt="festival background"
         src={background}
