@@ -1,11 +1,13 @@
-import NextVideo from "next-video";
+import BackgroundVideo from "@/videos/KidsFunFestival.mp4";
 import React from "react";
+import Video from "next-video";
 
 const Hero = ({ section }) => {
   return (
-    <section className="mt-[-80px] h-screen">
-      <div className="relative w-full h-full flex items-center justify-center z-[-1]">
-        <div className="absolute z-10 space-y-2 text-white text-center">
+    <section>
+      <div className="relative flex flex-col items-start justify-start w-full">
+        <Video src={BackgroundVideo} autoplay muted loop />
+        <div className="absolute z-10 space-y-2 text-white text-center transform -translate-y-1/2 left-5 right-5 top-1/2">
           <div
             dangerouslySetInnerHTML={{
               __html: section.heading,
@@ -19,16 +21,16 @@ const Hero = ({ section }) => {
             className="text-lg font-semibold"
           />
         </div>
-        <video
+
+        {/* <video
           autoPlay
           loop
           muted
           className="block absolute w-full h-full object-cover"
         >
-          <source type="video/mp4" src="/Hoppy Festival 2023.m4v" />
-        </video>
+          <source type="video/mp4" src="/KidsFunFestivalHeroVideo.mp4" />
+        </video> */}
       </div>
-      {/* <NextVideo src={HoppyFestivalVideo} autoplay="on" /> */}
     </section>
   );
 };

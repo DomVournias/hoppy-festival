@@ -43,4 +43,17 @@ body {
   .shaped-radius {
     border-radius: 50% 50% 20% 20% / 40% 40% 60% 70%;
   }
+
+  mux-player {
+    --controls: none;
+    --media-object-fit: cover;
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  mux-player::part(gesture-layer) {
+    display: none;
+  }
 }
