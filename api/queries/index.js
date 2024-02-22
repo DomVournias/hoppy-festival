@@ -64,6 +64,14 @@ export const HOME_SECTIONS_QUERY = `
               }
             }
           }
+          testimonials {
+            logos {
+              nodes {
+                sourceUrl
+                altText
+              }
+            }
+          }
           about {
             description
             image {

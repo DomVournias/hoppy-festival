@@ -6,7 +6,7 @@ import React from "react";
 
 const About = (section) => {
   return (
-    <section className="">
+    <section id="about">
       <div className="flex space-x-20 ">
         <div className="relative w-1/2 ">
           <Image

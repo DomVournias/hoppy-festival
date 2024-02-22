@@ -16,9 +16,9 @@ const Sponsors = ({ section }) => {
 
         <div className="w-1/2 space-y-10">
           <div className="space-y-4 flex flex-col ">
-            {/* <h4 className="text-base font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit border-b-2">
+            <h4 className="text-base font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit border-b-2">
               Μέγας Χορηγός
-            </h4> */}
+            </h4>
             <div className="rounded-xl p-2 w-fit ">
               <div className="relative w-36 h-16 ">
                 <Image
@@ -32,9 +32,9 @@ const Sponsors = ({ section }) => {
             </div>
           </div>
           <div className="space-y-4 flex flex-col ">
-            {/* <h4 className="text-lg font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit">
+            <h4 className="text-lg font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit">
               Χορηγοί
-            </h4> */}
+            </h4>
             <ul className="flex flex-wrap gap-10 ">
               {section.sponsors.nodes.map((item, index) => (
                 <li key={index} className="rounded-xl p-2 w-fit">
@@ -52,9 +52,9 @@ const Sponsors = ({ section }) => {
             </ul>
           </div>
           <div className="space-y-4 flex flex-col ">
-            {/* <h4 className="text-lg font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit">
+            <h4 className="text-lg font-medium text-neutral-content py-2 px-4 bg-neutral rounded-xl w-fit">
               Υποστηρικτές
-            </h4> */}
+            </h4>
             <ul className="flex flex-wrap gap-10 ">
               {section.supporters.nodes.map((item, index) => (
                 <li key={index} className=" rounded-xl p-2 w-fit">

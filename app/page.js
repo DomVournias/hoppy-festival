@@ -27,8 +27,8 @@ export default async function Home() {
       <Actions section={getSectionBySlug("actions")} />
       <Sponsors section={getSectionBySlug("sponsors")} />
       <Info section={getSectionBySlug("info")} />
-      <Testimonials />
       <About section={getSectionBySlug("about")} />
+      <Testimonials section={getSectionBySlug("testimonials")} />
     </div>
   );
 }
