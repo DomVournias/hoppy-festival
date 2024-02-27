@@ -11,7 +11,7 @@ import mask from "@/images/mask.png";
 
 const Festival = ({ section }) => {
   return (
-    <section id="festival" className="relative">
+    <section id="festival" className="relative paddings ">
       <Image
         alt="festival background"
         src={background}
@@ -23,10 +23,10 @@ const Festival = ({ section }) => {
           objectFit: "cover",
         }}
       />
-      <div className=" max-w-7xl m-auto pt-40 pb-20">
-        <div className="flex gap-20">
-          <div className="w-1/2 space-y-6 z-10">
-            <h3 className="text-4xl font-bold pb-2">{section.heading}</h3>
+      <div className="max-w-7xl m-auto px-4 ">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+          <div className="w-full md:w-1/2 space-y-6 z-10">
+            <h3 className="heading md:pb-2">{section.heading}</h3>
             <div
               dangerouslySetInnerHTML={{
                 __html: section.description,
@@ -35,7 +35,7 @@ const Festival = ({ section }) => {
             />
           </div>
 
-          <div className="w-1/2 relative">
+          <div className="w-full md:w-1/2 relative">
             {/* <FestivalAnimation /> */}
             <Image
               alt="festival picture"
@@ -46,7 +46,7 @@ const Festival = ({ section }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-10 mb-20">
+      <div className="flex flex-wrap justify-center gap-14 md:gap-10 pt-20 ">
         <div className="group">
           <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
             <div className="card-body items-center text-center">
