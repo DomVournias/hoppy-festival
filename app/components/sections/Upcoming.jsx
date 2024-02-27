@@ -13,15 +13,15 @@ const Upcoming = ({ section }) => {
 
   return (
     <section>
-      <div className="w-full bg-accent ">
-        <div className="flex max-w-7xl m-auto items-center justify-between py-6">
-          <div className="text-accent-content space-y-4">
+      <div className="w-full bg-accent px-3">
+        <div className="flex flex-col md:flex-row max-w-full md:max-w-7xl text-center md:text-left m-auto items-center justify-between py-6">
+          <div className="text-accent-content space-y-1 md:space-y-4">
             <div
               dangerouslySetInnerHTML={{ __html: section.heading }}
-              className="text-4xl font-bold "
+              className="text-3xl md:text-4xl font-bold "
             />
             <div
-              className="text-lg font-medium"
+              className=" text-base md:text-lg font-medium"
               dangerouslySetInnerHTML={{ __html: section.description }}
             />
           </div>
