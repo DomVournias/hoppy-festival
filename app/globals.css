@@ -17,6 +17,12 @@
   }
 } */
 
+html,
+body,
+main {
+  overflow-x: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background));
@@ -95,5 +101,23 @@ body {
 
   .animate-heartbeat {
     animation: heartbeat 2s infinite;
+  }
+
+  /* Utility classes */
+
+  .hero-description {
+    @apply text-xs xl:text-lg font-semibold;
+  }
+
+  .heading {
+    @apply text-3xl md:text-4xl font-bold md:pb-2;
+  }
+
+  .content {
+    @apply text-base md:text-lg;
+  }
+
+  .paddings {
+    @apply py-20 xl:py-40;
   }
 }
