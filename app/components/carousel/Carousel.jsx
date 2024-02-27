@@ -3,7 +3,7 @@ import React from "react";
 
 const Carousel = ({ items }) => {
   return (
-    <div className="flex carousel w-1/2 relative h-screen">
+    <div className="relative flex carousel w-full xl:w-1/2 xl:h-screen">
       {items.map((item, index) => (
         <div
           key={index}
