@@ -7,8 +7,8 @@ import React from "react";
 const About = ({ section }) => {
   return (
     <section id="about">
-      <div className="flex space-x-20 ">
-        <div className="relative w-1/2 ">
+      <div className="flex flex-col-reverse xl:flex-row xl:space-x-20 ">
+        <div className="relative h-screen w-full xl:w-1/2 ">
           <Image
             alt={section.image.node.title}
             src={section.image.node.sourceUrl}
@@ -16,10 +16,8 @@ const About = ({ section }) => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="w-1/2 pr-40 space-y-6 flex flex-col justify-center py-40">
-          <h3 className="text-4xl font-bold pb-2 text-black ">
-            {section.heading}
-          </h3>
+        <div className="w-full xl:w-1/2 xl:pr-40 space-y-6 flex flex-col justify-center px-4 paddings">
+          <h3 className="heading text-black ">{section.heading}</h3>
           <div dangerouslySetInnerHTML={{ __html: section.description }} />
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
