@@ -12,13 +12,13 @@ const Hero = ({ section }) => {
             dangerouslySetInnerHTML={{
               __html: section.heading,
             }}
-            className="text-6xl font-extrabold pb-4 "
+            className="text-xl xl:text-6xl font-extrabold xl:pb-4 "
           />
           <div
             dangerouslySetInnerHTML={{
               __html: section.description,
             }}
-            className="text-lg font-semibold"
+            className="hero-description"
           />
         </div>
 
