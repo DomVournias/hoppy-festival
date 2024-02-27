@@ -4,25 +4,23 @@ import { MdPhone } from "react-icons/md";
 import { MdPhoneAndroid } from "react-icons/md";
 import React from "react";
 
-const About = (section) => {
+const About = ({ section }) => {
   return (
     <section id="about">
       <div className="flex space-x-20 ">
         <div className="relative w-1/2 ">
           <Image
-            alt={section.section.image.node.title}
-            src={section.section.image.node.sourceUrl}
+            alt={section.image.node.title}
+            src={section.image.node.sourceUrl}
             fill={true}
             style={{ objectFit: "cover" }}
           />
         </div>
         <div className="w-1/2 pr-40 space-y-6 flex flex-col justify-center py-40">
           <h3 className="text-4xl font-bold pb-2 text-black ">
-            Σχετικά με εμάς
+            {section.heading}
           </h3>
-          <div
-            dangerouslySetInnerHTML={{ __html: section.section.description }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: section.description }} />
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <IoIosPin className="flex bg-accent text-accent-content w-8 h-8 p-[4px] rounded-full" />

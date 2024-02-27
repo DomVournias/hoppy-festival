@@ -12,6 +12,7 @@ export const HOME_SECTIONS_QUERY = `
             description
           }
           festival {
+            heading
             description
             time_heading
             time_description
@@ -34,6 +35,7 @@ export const HOME_SECTIONS_QUERY = `
             }
           }
           actions {
+            heading
             description
             gallery {
               nodes {
@@ -44,7 +46,22 @@ export const HOME_SECTIONS_QUERY = `
             }
           }
           sponsors {
+            heading
             description
+            first_support_description
+            first_support_logos {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
+            second_support_description
+            second_support_logos {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
             sponsors {
               nodes {
                 title
@@ -65,6 +82,7 @@ export const HOME_SECTIONS_QUERY = `
             }
           }
           testimonials {
+            heading
             logos {
               nodes {
                 sourceUrl
@@ -73,6 +91,7 @@ export const HOME_SECTIONS_QUERY = `
             }
           }
           about {
+            heading
             description
             image {
               node {
