@@ -26,7 +26,7 @@ const Festival = ({ section }) => {
       <div className=" max-w-7xl m-auto pt-40 pb-20">
         <div className="flex gap-20">
           <div className="w-1/2 space-y-6 z-10">
-            <h3 className="text-4xl font-bold pb-2">Το Φεστιβάλ</h3>
+            <h3 className="text-4xl font-bold pb-2">{section.heading}</h3>
             <div
               dangerouslySetInnerHTML={{
                 __html: section.description,
@@ -47,36 +47,36 @@ const Festival = ({ section }) => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center gap-10 mb-20">
-        <div className="">
-          <div className="card w-96 h-[340px] bg-primary text-primary-content rounded-3xl">
+        <div className="group">
+          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
             <div className="card-body items-center text-center">
-              <FcLowPriority className="text-5xl" />
+              <FcLowPriority className="text-7xl mt-[-70px] group-hover:animate-arrow-bounce" />
 
-              <h2 className="card-title pb-3">{section.place_heading}</h2>
+              <h2 className="card-title pb-3 pt-3">{section.place_heading}</h2>
               <div
                 dangerouslySetInnerHTML={{ __html: section.place_description }}
               />
             </div>
           </div>
         </div>
-        <div>
-          <div className="card w-96 h-[340px] bg-primary text-primary-content rounded-3xl">
+        <div className="group">
+          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
             <div className="card-body items-center text-center">
-              <FcClock className="text-5xl" />
+              <FcClock className="text-7xl mt-[-70px] group-hover:animate-spin" />
 
-              <h2 className="card-title pb-3">{section.time_heading}</h2>
+              <h2 className="card-title pb-3 pt-3">{section.time_heading}</h2>
               <div
                 dangerouslySetInnerHTML={{ __html: section.time_description }}
               />
             </div>
           </div>
         </div>
-        <div>
-          <div className="card w-96 h-[340px] bg-primary text-primary-content rounded-3xl">
+        <div className="group ">
+          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
             <div className="card-body items-center text-center">
-              <FcLike className="text-5xl" />
+              <FcLike className="text-7xl mt-[-70px] group-hover:animate-heartbeat" />
 
-              <h2 className="card-title pb-3">{section.goal_heading}</h2>
+              <h2 className="card-title pb-3 pt-3">{section.goal_heading}</h2>
               <div
                 dangerouslySetInnerHTML={{ __html: section.goal_description }}
               />
