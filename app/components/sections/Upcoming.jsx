@@ -18,10 +18,10 @@ const Upcoming = ({ section }) => {
           <div className="text-accent-content space-y-1 md:space-y-4">
             <div
               dangerouslySetInnerHTML={{ __html: section.heading }}
-              className="text-3xl md:text-4xl font-bold "
+              className="heading"
             />
             <div
-              className=" text-base md:text-lg font-medium"
+              className="content font-medium"
               dangerouslySetInnerHTML={{ __html: section.description }}
             />
           </div>
