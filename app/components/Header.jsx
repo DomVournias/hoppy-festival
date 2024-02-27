@@ -12,7 +12,7 @@ const Header = async () => {
 
   return (
     <header
-      className="absolute z-50 w-full bg-gray-600 backdrop-filter backdrop-blur-md bg-opacity-20 border-b-[0.2px] border-[rgba(255,255,255,0.2)]
+      className="absolute z-50 w-full bg-gray-600 bg-opacity-0 xl:backdrop-filter xl:backdrop-blur-md xl:bg-opacity-20 xl:border-b-[0.2px] xl:border-[rgba(255,255,255,0.2)] px-3
     "
     >
       <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-50 text-white">
@@ -24,9 +24,9 @@ const Header = async () => {
             height={50}
             className="rounded-full"
           />
-          <span>Hoppy Festival 2024</span>
+          <span className="hidden xl:flex">Hoppy Festival 2024</span>
         </Link>
-        <nav>
+        <nav className="hidden xl:flex">
           <ul className="flex gap-4">
             {menu.map((item) => (
               <li key={item.id}>
@@ -37,6 +37,38 @@ const Header = async () => {
             ))}
           </ul>
         </nav>
+        <div className="dropdown xl:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a>Homepage</a>
+            </li>
+            <li>
+              <a>Portfolio</a>
+            </li>
+            <li>
+              <a>About</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );
