@@ -20,7 +20,7 @@ export default async function Home() {
   };
 
   return (
-    <div>
+    <>
       <Hero section={getSectionBySlug("hero")} />
       <Upcoming section={getSectionBySlug("upcoming")} />
       <Festival section={getSectionBySlug("festival")} />
@@ -29,6 +29,6 @@ export default async function Home() {
       <Info section={getSectionBySlug("info")} />
       <About section={getSectionBySlug("about")} />
       <Testimonials section={getSectionBySlug("testimonials")} />
-    </div>
+    </>
   );
 }
