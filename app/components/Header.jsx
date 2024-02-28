@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { fetchMainMenu } from "@/api/functions";
-import { headerLinks } from "../data/home";
 import logo from "@/images/HoppyFestivalLogo.jpg";
 
 const Header = async () => {
@@ -37,7 +36,7 @@ const Header = async () => {
             ))}
           </ul>
         </nav>
-        <div className="dropdown xl:hidden">
+        <a htmlFor="menu_modal" className="xl:hidden" href="#menu_modal">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,21 +53,7 @@ const Header = async () => {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
-        </div>
+        </a>
       </div>
     </header>
   );

@@ -3,6 +3,7 @@ import Actions from "./components/sections/Actions";
 import Festival from "./components/sections/Festival";
 import Hero from "./components/sections/Hero";
 import Info from "./components/sections/Info";
+import Modal from "./components/modals/Modal";
 import Sponsors from "./components/sections/Sponsors";
 import Testimonials from "./components/sections/Testimonials";
 import Upcoming from "./components/sections/Upcoming";
@@ -29,6 +30,7 @@ export default async function Home() {
       <Info section={getSectionBySlug("info")} />
       <About section={getSectionBySlug("about")} />
       <Testimonials section={getSectionBySlug("testimonials")} />
+      <Modal />
     </>
   );
 }
