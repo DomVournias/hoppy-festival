@@ -6,9 +6,11 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <li key={index}>
           <div className="collapse collapse-arrow bg-white shadow-lg">
-            <label htmlFor={index} className="hidden" />
+            <label htmlFor={item.question + index} className="invisible h-0">
+              {item.question}
+            </label>
             <input
-              id={index}
+              id={item.question + index}
               type="radio"
               name="my-accordion-2"
               defaultChecked
