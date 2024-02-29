@@ -14,8 +14,7 @@ const Festival = ({ section }) => {
     <section id="festival" className="relative paddings ">
       <Image
         alt="festival background"
-        src={background}
-        placeholder="blur"
+        src={section.background.nodes[0].sourceUrl}
         quality={100}
         fill
         sizes="100vw"
@@ -39,9 +38,14 @@ const Festival = ({ section }) => {
             {/* <FestivalAnimation /> */}
             <Image
               alt="festival picture"
-              src={festivalImg}
+              src={section.image.nodes[0].sourceUrl}
+              quality={100}
+              fill
+              style={{
+                objectFit: "cover",
+              }}
               className="clipping-mask"
-            ></Image>
+            />
             {/* <Image src={mask}></Image> */}
           </div>
         </div>
