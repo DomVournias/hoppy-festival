@@ -10,6 +10,19 @@ import Testimonials from "./components/sections/Testimonials";
 import Upcoming from "./components/sections/Upcoming";
 import { fetchHomeSections } from "@/api/functions";
 
+export const metadata = {
+  title: "Hoppy Festival - Παιδικό Φεστιβάλ",
+  description:
+    "Το Hoppy Festival είναι το μεγαλύτερο φεστιβάλ για μικρούς και μεγάλους, με 150+ δράσεις του παιδικού φεστιβάλ",
+  alternates: {
+    canonical: "https://hoppy-festival.vercel.app",
+    languages: {
+      "el-EL": "/el-GR",
+      "en-US": "/en-US",
+    },
+  },
+};
+
 export default async function Home() {
   const res = await fetchHomeSections();
 

@@ -12,7 +12,7 @@ const Upcoming = ({ section }) => {
   const date = section.eventDate;
 
   return (
-    <section>
+    <section id="upcoming">
       <div className="w-full bg-accent px-3">
         <div className="flex flex-col md:flex-row max-w-full md:max-w-7xl text-center md:text-left m-auto items-center justify-between py-6">
           <div className="text-accent-content space-y-1 md:space-y-4">
