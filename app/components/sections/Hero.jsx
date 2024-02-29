@@ -2,6 +2,15 @@ import BackgroundVideo from "@/videos/KidsFunFestival.mp4";
 import React from "react";
 import Video from "next-video";
 
+// import dynamic from "next/dynamic";
+
+// const Video = dynamic(() => import("next-video"), {
+//   ssr: false,
+//   loading: () => (
+//     <span className="loading loading-infinity loading-lg text-accent-content"></span>
+//   ),
+// });
+
 const Hero = ({ section }) => {
   return (
     <section id="hero">

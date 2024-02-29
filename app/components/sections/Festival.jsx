@@ -1,13 +1,8 @@
 import { FcClock } from "react-icons/fc";
 import { FcLike } from "react-icons/fc";
 import { FcLowPriority } from "react-icons/fc";
-import FestivalAnimation from "../animations/festival";
 import Image from "next/image";
 import React from "react";
-import { TbTargetArrow } from "react-icons/tb";
-import background from "@/images/bg_doodle_1.png";
-import festivalImg from "@/images/Festival.jpeg";
-import mask from "@/images/mask.png";
 
 const Festival = ({ section }) => {
   return (
@@ -35,7 +30,6 @@ const Festival = ({ section }) => {
           </div>
 
           <div className="w-full md:w-1/2 relative">
-            {/* <FestivalAnimation /> */}
             <Image
               alt="festival picture"
               src={section.image.nodes[0].sourceUrl}
@@ -46,7 +40,6 @@ const Festival = ({ section }) => {
               }}
               className="clipping-mask"
             />
-            {/* <Image src={mask}></Image> */}
           </div>
         </div>
       </div>
