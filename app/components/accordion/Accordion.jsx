@@ -6,14 +6,12 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <li key={index}>
           <div className="collapse collapse-arrow bg-white shadow-lg">
-            <label htmlFor={item.question + index} className="invisible h-0">
-              {item.question}
-            </label>
             <input
               id={item.question + index}
               type="radio"
               name="my-accordion-2"
               defaultChecked
+              aria-label={item.question}
             />
             <div className="collapse-title text-xl font-medium text-accent-content">
               {item.question}

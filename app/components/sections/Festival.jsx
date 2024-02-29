@@ -17,7 +17,7 @@ const Festival = ({ section }) => {
         src={section.background.nodes[0].sourceUrl}
         quality={100}
         fill
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         style={{
           objectFit: "cover",
         }}

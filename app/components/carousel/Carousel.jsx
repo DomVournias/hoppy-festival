@@ -17,6 +17,7 @@ const Carousel = ({ items }) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             quality={100}
             fill={true}
+            srcset={item.srcset}
             style={{ objectFit: "cover" }}
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

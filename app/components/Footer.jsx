@@ -30,6 +30,7 @@ const Footer = () => {
             target="_blank"
             alt="Hoppy Festival Facebook"
             rel="noopener"
+            aria-label="Facebook"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +48,7 @@ const Footer = () => {
             target="_blank"
             alt="Hoppy Festival Youtube"
             rel="noopener"
+            aria-label="Youtube"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +65,7 @@ const Footer = () => {
             target="_blank"
             alt="Hoppy Festival Instagram"
             rel="noopener"
+            aria-label="Instagram"
           >
             <svg
               width="27"

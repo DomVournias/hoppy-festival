@@ -25,7 +25,7 @@ const Upcoming = ({ section }) => {
               dangerouslySetInnerHTML={{ __html: section.description }}
             />
           </div>
-          <div className="flex items-center justify-center h-36">
+          <div className="flex items-center justify-center ">
             <CountdownTimer targetDate={date} />
           </div>
         </div>
