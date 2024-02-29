@@ -14,6 +14,18 @@ export const HOME_SECTIONS_QUERY = `
           festival {
             heading
             description
+            background {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
+            image {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
             time_heading
             time_description
             place_heading
@@ -37,7 +49,7 @@ export const HOME_SECTIONS_QUERY = `
           actions {
             heading
             description
-            gallery {
+            gallery(first: 50) {
               nodes {
                 id
                 title
