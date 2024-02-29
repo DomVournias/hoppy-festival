@@ -22,13 +22,14 @@ const Sponsors = ({ section }) => {
             <ul className="flex flex-wrap">
               {section.first_support_logos.nodes.map((item, index) => (
                 <li key={index} className="rounded-xl p-2 w-fit">
-                  <div className="relative w-44 h-24 ">
+                  <div className="relative h-[110px] w-[230px] ">
                     <Image
                       src={item.sourceUrl}
                       alt={item.title}
                       fill={true}
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
                     />
                   </div>
                 </li>
@@ -45,13 +46,14 @@ const Sponsors = ({ section }) => {
             <ul className="flex flex-wrap">
               {section.second_support_logos.nodes.map((item, index) => (
                 <li key={index} className="rounded-xl p-2 w-fit">
-                  <div className="relative w-44 h-28 ">
+                  <div className="relative h-[110px] w-[230px] ">
                     <Image
                       src={item.sourceUrl}
                       alt={item.title}
                       fill={true}
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
                     />
                   </div>
                 </li>
@@ -66,13 +68,14 @@ const Sponsors = ({ section }) => {
               Μέγας Χορηγός
             </div>
             <div className="rounded-xl p-2 w-fit ">
-              <div className="relative w-56 h-28 mt-[-20px]">
+              <div className="relative h-[110px] w-[230px] mt-[-20px]">
                 <Image
                   src={section.top_sponsor.node.sourceUrl}
                   alt={section.top_sponsor.node.title}
                   fill={true}
                   style={{ objectFit: "contain" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -91,6 +94,7 @@ const Sponsors = ({ section }) => {
                       fill={true}
                       style={{ objectFit: "contain" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
                     />
                   </div>
                 </li>
@@ -111,6 +115,7 @@ const Sponsors = ({ section }) => {
                       fill={true}
                       style={{ objectFit: "contain" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      loading="lazy"
                     />
                   </div>
                 </li>

@@ -17,7 +17,7 @@ export const metadata = {
   alternates: {
     canonical: "https://hoppy-festival.vercel.app",
     languages: {
-      "el-EL": "/el-GR",
+      "el-EL": "/el-EL",
       "en-US": "/en-US",
     },
   },
