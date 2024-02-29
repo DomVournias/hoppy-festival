@@ -21,7 +21,7 @@ const Hero = ({ section }) => {
             dangerouslySetInnerHTML={{
               __html: section.heading,
             }}
-            className="text-xl xl:text-6xl font-extrabold xl:pb-4 "
+            className="hero-heading"
           />
           <div
             dangerouslySetInnerHTML={{

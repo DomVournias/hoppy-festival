@@ -105,8 +105,12 @@ body {
 
   /* Utility classes */
 
+  .hero-heading {
+    @apply text-xl md:text-5xl xl:text-6xl font-extrabold xl:pb-4;
+  }
+
   .hero-description {
-    @apply text-xs xl:text-lg font-semibold;
+    @apply text-xs md:text-base xl:text-lg font-semibold;
   }
 
   .heading {
