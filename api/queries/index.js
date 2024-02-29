@@ -54,6 +54,7 @@ export const HOME_SECTIONS_QUERY = `
                 id
                 title
                 sourceUrl
+                srcSet(size: MEDIUM_LARGE)
               }
             }
           }

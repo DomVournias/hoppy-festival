@@ -14,6 +14,7 @@ const Carousel = ({ items }) => {
             alt={item.title}
             src={item.sourceUrl}
             className="w-full"
+            sizes={item.srcSet}
             quality={100}
             fill={true}
             style={{ objectFit: "cover" }}
