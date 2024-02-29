@@ -7,7 +7,12 @@ const Modal = async () => {
   const menu = menuData.data.menu.menuItems.nodes;
   return (
     <>
-      <div className="modal max-w-full xl:hidden" role="dialog" id="menu_modal">
+      <div
+        className="modal max-w-full xl:hidden"
+        role="dialog"
+        id="menu_modal"
+        aria-label="menu modal"
+      >
         <div className="modal-box w-screen max-w-full h-screen max-h-full rounded-none bg-primary text-primary-content justify-center items-center flex">
           <div className="modal-action">
             <a
@@ -24,7 +29,9 @@ const Modal = async () => {
                     key={item.id}
                     className="btn bg-transparent border-transparent text-white hover:text-black"
                   >
-                    <a href={item.url}>{item.label}</a>
+                    <a aria-label="menu link" href={item.url}>
+                      {item.label}
+                    </a>
                   </li>
                 ))}
               </ul>

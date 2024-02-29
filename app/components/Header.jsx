@@ -36,8 +36,18 @@ const Header = async () => {
             ))}
           </ul>
         </nav>
-        <a htmlFor="menu_modal" className="xl:hidden" href="#menu_modal">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <a
+          htmlFor="menu_modal"
+          className="xl:hidden"
+          href="#menu_modal"
+          aria-label="menu modal trigger"
+        >
+          <div
+            aria-label="menu modal button"
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
