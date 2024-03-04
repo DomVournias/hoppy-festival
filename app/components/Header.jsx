@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { fetchMainMenu } from "@/api/functions";
-import logo from "@/images/HoppyFestivalLogo.jpg";
+import logo from "@/images/KidsFunFestivalLogo.png";
 
 const Header = async () => {
   const res = await fetchMainMenu();
@@ -17,13 +17,13 @@ const Header = async () => {
       <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-50 text-white">
         <Link href="/" className="text-lg font-bold flex items-center gap-3">
           <Image
-            alt="header logo"
+            alt="Kids Fun Festival"
             src={logo}
-            width={50}
+            width={200}
             height={50}
             className="rounded-full"
           />
-          <span className="hidden xl:flex">Hoppy Festival 2024</span>
+          {/* <span className="hidden xl:flex">Kids Fun Festival</span> */}
         </Link>
         <nav className="hidden xl:flex">
           <ul className="flex gap-4">

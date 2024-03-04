@@ -1,17 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "@/images/HoppyFestivalLogo.jpg";
+import logo from "@/images/EventityLogo.png";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center pt-10 pl-10 pr-10 bg-primary text-primary-content">
       <aside>
-        <Link href="/" className="text-lg font-bold flex items-center gap-3">
+        <Link
+          href="/"
+          className="text-lg font-bold flex items-center gap-3 pb-2"
+        >
           <Image
             alt="footer logo"
             src={logo}
-            width={70}
+            width={160}
             height={70}
             className="rounded-full"
           />
@@ -26,7 +29,7 @@ const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4 items-center justify-center text-primary-content">
           <a
-            href="https://www.facebook.com/HoPPyFestival"
+            href="https://www.facebook.com/KidsFunFestivalGreece"
             target="_blank"
             alt="Hoppy Festival Facebook"
             rel="noopener"
@@ -44,7 +47,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.youtube.com/@hoppyfestival"
+            href="https://www.instagram.com/kids_funfestival"
             target="_blank"
             alt="Hoppy Festival Youtube"
             rel="noopener"
@@ -61,7 +64,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/hoppy_festival"
+            href="https://www.youtube.com/watch?v=sjtHQnIqRdk"
             target="_blank"
             alt="Hoppy Festival Instagram"
             rel="noopener"

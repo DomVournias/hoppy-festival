@@ -61,6 +61,12 @@ export const HOME_SECTIONS_QUERY = `
           sponsors {
             heading
             description
+            image {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
             first_support_description
             first_support_logos {
               nodes {
@@ -96,7 +102,7 @@ export const HOME_SECTIONS_QUERY = `
           }
           testimonials {
             heading
-            logos {
+            logos(first: 30) {
               nodes {
                 sourceUrl
                 altText
