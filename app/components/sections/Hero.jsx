@@ -1,4 +1,4 @@
-import BackgroundVideo from "@/videos/KidsFunFestival.mp4";
+import BackgroundVideo from "@/videos/KidsFunFestivalVideo.mp4";
 import React from "react";
 import Video from "next-video";
 
