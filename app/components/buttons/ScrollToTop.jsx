@@ -34,7 +34,7 @@ const ScrollToTop = () => {
       id="to-top-button"
       onClick={scrollToTop}
       title="Go To Top"
-      className={`fixed z-[100] bottom-5 right-5 p-4 border-0 w-12 h-12 rounded-full shadow-md bg-primary hover:bg-primary text-white text-lg font-semibold transition-colors duration-300 flex justify-center items-center backdrop-filter backdrop-blur-sm bg-opacity-50 ${
+      className={`fixed z-[100] bottom-5 right-5 p-4 border-0 w-12 h-12 rounded-full shadow-md bg-secondary hover:bg-opacity-100 text-white text-lg font-semibold transition-colors duration-300 flex justify-center items-center backdrop-filter backdrop-blur-sm bg-opacity-80 ${
         isVisible ? "" : "hidden"
       }`}
     >

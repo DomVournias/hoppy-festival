@@ -48,6 +48,7 @@ export const HOME_SECTIONS_QUERY = `
           }
           actions {
             heading
+            descriptionOne
             description
             actions {
               title

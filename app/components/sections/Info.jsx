@@ -7,9 +7,11 @@ const Info = ({ section }) => {
     <section id="info" className="py-10 bg-accent paddings">
       <div className="px-4 mx-auto max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="heading text-accent-content">{section.heading}</h2>
+          <h2 className="heading text-accent-content mb-2">
+            {section.heading}
+          </h2>
           <div
-            className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-accent-content"
+            className="max-w-xl mx-auto content font-medium text-center text-accent-content"
             dangerouslySetInnerHTML={{ __html: section.description }}
           />
         </div>
