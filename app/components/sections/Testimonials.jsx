@@ -4,9 +4,9 @@ import React from "react";
 const Testimonials = ({ section }) => {
   const logos = section.logos.nodes;
   return (
-    <section id="testimonials" className="bg-neutral-content">
+    <section id="testimonials" className="bg-base-200">
       <div className="max-w-7xl m-auto space-y-6 paddings">
-        <h3 className="heading pb-4 text-center text-neutral">
+        <h3 className="heading pb-4 text-center text-black">
           {section.heading}
         </h3>
         <div>
@@ -14,7 +14,7 @@ const Testimonials = ({ section }) => {
             {logos.map((item, index) => (
               <li
                 key={index}
-                className="bg-base-200 rounded-xl p-2 w-fit saturate-0 transition ease-in-out hover:saturate-100 hover:bg-base-100 duration-300"
+                className="bg-base-100 rounded-xl p-2 w-fit saturate-0 transition ease-in-out hover:saturate-100 hover:bg-base-100 duration-300"
               >
                 <a
                   target="_blank"

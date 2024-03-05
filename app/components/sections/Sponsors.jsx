@@ -4,7 +4,7 @@ import React from "react";
 const Sponsors = ({ section }) => {
   // console.log(section);
   return (
-    <section id="sponsors">
+    <section id="sponsors" className="bg-base-100">
       <div className="flex flex-col xl:flex-row xl:space-x-20 ">
         <div className="w-full xl:w-1/2 xl:pl-40 space-y-6 flex flex-col justify-center px-4 paddings xl:pt-0 xl:pb-0">
           <h2 className="heading ">{section.heading}</h2>

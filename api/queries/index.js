@@ -49,6 +49,9 @@ export const HOME_SECTIONS_QUERY = `
           actions {
             heading
             description
+            actions {
+              title
+            }
             gallery(first: 50) {
               nodes {
                 id

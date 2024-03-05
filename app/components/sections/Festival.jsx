@@ -6,7 +6,7 @@ import React from "react";
 
 const Festival = ({ section }) => {
   return (
-    <section id="festival" className="relative paddings ">
+    <section id="festival" className="relative paddings bg-base-200">
       <Image
         alt="festival background"
         src={section.background.nodes[0].sourceUrl}
@@ -45,7 +45,7 @@ const Festival = ({ section }) => {
       </div>
       <div className="flex flex-wrap justify-center gap-14 md:gap-10 pt-20 ">
         <div className="group">
-          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
+          <div className="card w-96 h-[320px] bg-base-100 text-accent-content rounded-3xl">
             <div className="card-body items-center text-center">
               <FcLowPriority className="text-7xl mt-[-70px] group-hover:animate-arrow-bounce" />
 
@@ -57,19 +57,22 @@ const Festival = ({ section }) => {
           </div>
         </div>
         <div className="group">
-          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
+          <div className="card w-96 h-[320px] bg-base-100  rounded-3xl">
             <div className="card-body items-center text-center">
               <FcClock className="text-7xl mt-[-70px] group-hover:animate-spin" />
 
-              <h2 className="card-title pb-3 pt-3">{section.time_heading}</h2>
+              <h2 className="card-title pb-3 pt-3 text-accent-content">
+                {section.time_heading}
+              </h2>
               <div
                 dangerouslySetInnerHTML={{ __html: section.time_description }}
+                className="text-accent-content"
               />
             </div>
           </div>
         </div>
         <div className="group ">
-          <div className="card w-96 h-[320px] bg-primary text-primary-content rounded-3xl">
+          <div className="card w-96 h-[320px] bg-base-100 text-accent-content rounded-3xl">
             <div className="card-body items-center text-center">
               <FcLike className="text-7xl mt-[-70px] group-hover:animate-heartbeat" />
 
