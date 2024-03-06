@@ -1,4 +1,8 @@
-import { HOME_SECTIONS_QUERY, MAIN_MENU_QUERY } from "../queries";
+import {
+  HOME_SECTIONS_QUERY,
+  LAYOUT_SECTIONS_QUERY,
+  MAIN_MENU_QUERY,
+} from "../queries";
 
 export async function fetchDataNoCache(query) {
   const res = await fetch(
@@ -25,8 +29,8 @@ export async function fetchHomeSections() {
   return data;
 }
 
-export async function fetchHomeHeroSection() {
-  const data = await fetchDataNoCache(HOME_SECTIONS_QUERY);
+export async function fetchLayoutSections() {
+  const data = await fetchDataNoCache(LAYOUT_SECTIONS_QUERY);
   return data;
 }
 

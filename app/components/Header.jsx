@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { fetchMainMenu } from "@/api/functions";
-import logo from "@/images/KidsFunFestivalLogo.png";
 
-const Header = async () => {
+const Header = async ({ header }) => {
   const res = await fetchMainMenu();
 
   const menu = res.data.menu.menuItems.nodes;
+
+  const logo = header.logo.nodes[0].sourceUrl;
 
   return (
     <header

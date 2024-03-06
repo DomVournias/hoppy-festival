@@ -1,3 +1,46 @@
+export const LAYOUT_SECTIONS_QUERY = `
+  query GetLayoutSections {
+    headerSection: section(id: "header", idType: SLUG) {
+      header {
+        logo {
+          nodes {
+            sourceUrl
+          }
+        }
+      }
+    }
+    footerSection: section(id: "footer", idType: SLUG) {
+      footer {
+        logo {
+          nodes {
+            sourceUrl
+          }
+        }
+        title
+        description
+        copyright
+        facebook
+        youtube
+        instagram
+      }
+    }
+  }
+`;
+
+export const MAIN_MENU_QUERY = `
+query GetMainMenu {
+  menu(idType: NAME, id: "Main") {
+    menuItems {
+      nodes {
+        id
+        url
+        label
+      }
+    }
+  }
+}
+`;
+
 export const HOME_SECTIONS_QUERY = `
   query GetHomeSections {
     sectionCategory(idType: SLUG, id: "home") {
@@ -123,22 +166,21 @@ export const HOME_SECTIONS_QUERY = `
               }
             }
           }
+          footer {
+            logo {
+              nodes {
+                sourceUrl
+              }
+            }
+            title
+            description
+            copyright
+            facebook
+            youtube
+            instagram
+          }
         }
       }
     }
   }
-`;
-
-export const MAIN_MENU_QUERY = `
-query GetMainMenu {
-  menu(idType: NAME, id: "Main") {
-    menuItems {
-      nodes {
-        id
-        url
-        label
-      }
-    }
-  }
-}
 `;
