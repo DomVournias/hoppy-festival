@@ -16,12 +16,15 @@ const Header = async ({ header }) => {
     "
     >
       <div className="flex justify-between items-center max-w-7xl m-auto h-20 z-50 text-white">
-        <Link href="/" className="text-lg font-bold flex items-center gap-3">
+        <Link
+          href="/"
+          className="relative text-lg font-bold flex items-center gap-3 w-40 h-16 "
+        >
           <Image
             alt="Kids Fun Festival"
             src={logo}
-            width={200}
-            height={50}
+            fill={true}
+            style={{ objectFit: "contain" }}
             className="rounded-full"
           />
           {/* <span className="hidden xl:flex">Kids Fun Festival</span> */}
