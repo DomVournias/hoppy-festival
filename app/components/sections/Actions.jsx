@@ -1,10 +1,14 @@
+import Animated from "../Animated";
 import Carousel from "../carousel/Carousel";
 import { FaCheckCircle } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
 
 const Actions = ({ section }) => {
-  // console.log(section);
+  const variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <section id="actions" className="relative flex flex-col bg-base-100">
       <Image
@@ -31,13 +35,22 @@ const Actions = ({ section }) => {
         </div>
         <ul className="flex flex-wrap justify-center gap-4 pt-4 md:pt-6 ">
           {section.actions.map((action, index) => (
-            <li
+            <Animated
+              variants={variants}
+              delay={true}
+              index={index}
               key={index}
-              className="bg-primary text-primary-content py-3 px-6 rounded-lg flex justify-center items-center gap-2 font-medium"
             >
-              <FaCheckCircle className="text-primary-content" />
-              <p>{action.title}</p>
-            </li>
+              <li
+                key={index}
+                className="bg-primary text-primary-content py-3 px-6 rounded-lg flex justify-center items-center gap-2 font-medium"
+              >
+                <div>
+                  <FaCheckCircle className="text-[14px] text-primary-content" />
+                </div>
+                <p>{action.title}</p>
+              </li>
+            </Animated>
           ))}
         </ul>
       </div>

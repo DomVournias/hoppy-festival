@@ -1,10 +1,41 @@
+import Animated from "../Animated";
 import { FcClock } from "react-icons/fc";
 import { FcLike } from "react-icons/fc";
 import { FcLowPriority } from "react-icons/fc";
+import FestivalCard from "../cards/FestivalCard";
 import Image from "next/image";
 import React from "react";
 
 const Festival = ({ section }) => {
+  const cards = [
+    {
+      heading: section.place_heading,
+      description: section.place_description,
+      icon: (
+        <FcLowPriority className="text-7xl mt-[-70px] group-hover:animate-arrow-bounce" />
+      ),
+    },
+    {
+      heading: section.time_heading,
+      description: section.time_description,
+      icon: (
+        <FcClock className="text-7xl mt-[-70px] group-hover:animate-spin" />
+      ),
+    },
+    {
+      heading: section.goal_heading,
+      description: section.goal_description,
+      icon: (
+        <FcLike className="text-7xl mt-[-70px] group-hover:animate-heartbeat" />
+      ),
+    },
+  ];
+
+  const variants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <section id="festival" className="relative paddings bg-base-200">
       <Image
@@ -45,46 +76,27 @@ const Festival = ({ section }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-14 md:gap-10 pt-20 ">
-        <div className="group">
-          <div className="card w-96 h-[320px] bg-base-100 text-accent-content rounded-3xl">
-            <div className="card-body items-center text-center">
-              <FcLowPriority className="text-7xl mt-[-70px] group-hover:animate-arrow-bounce" />
 
-              <h2 className="card-title pb-3 pt-3">{section.place_heading}</h2>
-              <div
-                dangerouslySetInnerHTML={{ __html: section.place_description }}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="group">
-          <div className="card w-96 h-[320px] bg-base-100  rounded-3xl">
-            <div className="card-body items-center text-center">
-              <FcClock className="text-7xl mt-[-70px] group-hover:animate-spin" />
-
-              <h2 className="card-title pb-3 pt-3 text-accent-content">
-                {section.time_heading}
-              </h2>
-              <div
-                dangerouslySetInnerHTML={{ __html: section.time_description }}
-                className="text-accent-content"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="group ">
-          <div className="card w-96 h-[320px] bg-base-100 text-accent-content rounded-3xl">
-            <div className="card-body items-center text-center">
-              <FcLike className="text-7xl mt-[-70px] group-hover:animate-heartbeat" />
-
-              <h2 className="card-title pb-3 pt-3">{section.goal_heading}</h2>
-              <div
-                dangerouslySetInnerHTML={{ __html: section.goal_description }}
-              />
-            </div>
-          </div>
-        </div>
+      <div
+        className="flex flex-wrap justify-center gap-14 md:gap-10 pt-20 "
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          delay: 1,
+          ease: "easeInOut",
+          duration: 0.5,
+        }}
+      >
+        {cards.map((card, index) => (
+          <Animated variants={variants} delay={true} index={index} key={index}>
+            <FestivalCard
+              heading={card.heading}
+              description={card.description}
+              icon={card.icon}
+            />
+          </Animated>
+        ))}
       </div>
     </section>
   );
