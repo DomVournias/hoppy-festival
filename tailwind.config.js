@@ -10,6 +10,17 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        short: {
+          raw: "(min-height: 120px)",
+        },
+        smh: {
+          raw: "(max-height: 720px)",
+        },
+        tall: {
+          raw: "(min-height: 960px) and (min-width: 1280px)",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

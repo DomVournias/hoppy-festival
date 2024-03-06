@@ -104,6 +104,12 @@ export const HOME_SECTIONS_QUERY = `
                 srcSet(size: MEDIUM_LARGE)
               }
             }
+            background {
+              nodes {
+                title
+                sourceUrl
+              }
+            }
           }
           sponsors {
             heading
@@ -165,19 +171,6 @@ export const HOME_SECTIONS_QUERY = `
                 sourceUrl
               }
             }
-          }
-          footer {
-            logo {
-              nodes {
-                sourceUrl
-              }
-            }
-            title
-            description
-            copyright
-            facebook
-            youtube
-            instagram
           }
         }
       }

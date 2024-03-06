@@ -19,14 +19,15 @@ const Sponsors = ({ section }) => {
               }}
               className="italic"
             />
-            <ul className="flex flex-wrap">
+            <ul className="flex px-4">
               {section.first_support_logos.nodes.map((item, index) => (
                 <li key={index} className="rounded-xl p-2 w-fit">
-                  <div className="relative h-[110px] w-[230px] ">
+                  <div className="relative ">
                     <Image
                       src={item.sourceUrl}
                       alt={item.title}
-                      fill={true}
+                      width={200}
+                      height={60}
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       loading="lazy"
@@ -46,11 +47,12 @@ const Sponsors = ({ section }) => {
             <ul className="flex flex-wrap">
               {section.second_support_logos.nodes.map((item, index) => (
                 <li key={index} className="rounded-xl p-2 w-fit">
-                  <div className="relative h-[110px] w-[230px] ">
+                  <div className="relative ">
                     <Image
                       src={item.sourceUrl}
                       alt={item.title}
-                      fill={true}
+                      width={200}
+                      height={60}
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       loading="lazy"

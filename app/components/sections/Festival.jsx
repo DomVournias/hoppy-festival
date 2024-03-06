@@ -15,6 +15,8 @@ const Festival = ({ section }) => {
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         style={{
           objectFit: "cover",
+          top: "-100px",
+          opacity: 0.5,
         }}
       />
       <div className="max-w-7xl m-auto px-4 ">
