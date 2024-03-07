@@ -104,11 +104,11 @@ const Footer = ({ footer }) => {
           <a
             href="https://healthmarketing.gr/"
             target="_blank"
-            alt="Health Marketing Website"
+            alt="Altius Group"
             rel="noopener"
             className="font-bold"
           >
-            Health Marketing - Υπηρεσίες Iατρικού Marketing
+            Altius Group
           </a>
         </div>
       </div>
