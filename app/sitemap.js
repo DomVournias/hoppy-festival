@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: "https://hoppy-festival.vercel.app",
+      url: "https://kidsfunfestival.gr",
       lastModified: new Date(),
     },
   ];

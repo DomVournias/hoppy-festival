@@ -21,7 +21,7 @@ export default async function RootLayout({ children }) {
   const footer = footerSection.footer;
 
   return (
-    <html lang="en" data-theme="light">
+    <html lang="el" data-theme="light">
       <body className={inter.className}>
         <Header header={header} />
         <main>{children}</main>

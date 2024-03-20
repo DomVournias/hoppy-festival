@@ -11,13 +11,13 @@ import Upcoming from "./components/sections/Upcoming";
 import { fetchHomeSections } from "@/api/functions";
 
 export const metadata = {
-  title: "Hoppy Festival - Παιδικό Φεστιβάλ",
+  title: "Kids Fun Festival - Παιδικό Φεστιβάλ",
   description:
-    "Το Hoppy Festival είναι το μεγαλύτερο φεστιβάλ για μικρούς και μεγάλους, με 150+ δράσεις του παιδικού φεστιβάλ",
+    "Το Kids Fun Festival είναι το μεγαλύτερο φεστιβάλ για μικρούς και μεγάλους, με 150+ δράσεις του παιδικού φεστιβάλ",
   alternates: {
-    canonical: "https://hoppy-festival.vercel.app",
+    canonical: "https://kidsfunfestival.gr",
     languages: {
-      "el-EL": "https://hoppy-festival.vercel.app",
+      "el-EL": "https://kidsfunfestival.gr",
     },
   },
 };
